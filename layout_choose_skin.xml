@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_900"
+    android:id="@+id/choseSkin">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/skin1Btn"
+        android:layout_marginTop="127dp"
+        android:layout_marginStart="48dp"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/skin2Btn"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_alignTop="@+id/skin1Btn"
+        android:layout_toEndOf="@+id/skin1Btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All Available Skin:"
+        android:id="@+id/textView3"
+        android:textColor="@color/background_floating_material_light"
+        android:layout_above="@+id/skin2Btn"
+        android:layout_alignStart="@+id/skin1Btn"
+        android:layout_marginBottom="21dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update more ..."
+        android:id="@+id/updateSkinBtn"
+        android:singleLine="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/skin1Btn"
+        android:layout_marginBottom="49dp" />
+</RelativeLayout>
